@@ -51,7 +51,7 @@ Las acciones de este Makefile se ejecutan en las acciones de github al hacer un 
 
 [Ayuda para instalar make en windows](https://stackoverflow.com/questions/32127524/how-to-install-and-use-make-in-windows)
 
-Aclaración: No es necesario tener make instalado, el proyecto se puede ejecutar con python simplemente pero la idea del proyecto es probar como funciona un archivo Make.
+Aclaración: No es necesario tener make instalado, el proyecto se puede ejecutar con python simplemente pero la idea del proyecto es probar como funciona un archivo Makefile.
 
 ## Instalación
 
