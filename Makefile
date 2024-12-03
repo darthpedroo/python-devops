@@ -3,11 +3,11 @@ install:
 		pip install -r requirements.txt
 	python -m textblob.download_corpora
 format:
-	black *.py mylib/*.py
+	black *.py logic/*.py
 lint:
-	pylint --disable=R,C *.py mylib/*.py
+	pylint --disable=R,C *.py logic/*.py
 test:
-	python -m pytest -vv --cov=mylib
+	python -m pytest -vv --cov=logic
 build:
 	docker build -t deploy-fastapi .
 run:
