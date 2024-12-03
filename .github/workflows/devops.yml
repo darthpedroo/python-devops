@@ -29,5 +29,5 @@ jobs:
         make run    
     - name: Test Container
       run: |
-        curl http://127.0.0.1:8080
+        curl http://localhost:8080
     
