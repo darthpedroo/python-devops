@@ -4,3 +4,6 @@ pytest-cov
 pylint
 black
 fire
+fastapi
+uvicorn
+
