@@ -9,8 +9,11 @@ El objetivo de este proyecto era aprender el flujo de trabajo de DevOps, basando
 Seguí [este video](https://www.youtube.com/watch?v=YB-_FsssK8E) para realizar este proyecto
 
 ## Demo
-Demo de las acciones de github 
+Demo de las acciones de github
+
 ![image](https://github.com/user-attachments/assets/00e7047c-6206-4e7c-93ec-a460372b8698)
+
+Si algun paso del archivo devops.yml falla, la acción tambien lo hará.
 
 Estado actual de las acciones de github de este proyecto:
 [![Python application test with Github Actions](https://github.com/darthpedroo/python-devops/actions/workflows/devops.yml/badge.svg)](https://github.com/darthpedroo/python-devops/actions/workflows/devops.yml)
