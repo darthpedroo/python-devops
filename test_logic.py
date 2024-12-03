@@ -1,6 +1,6 @@
 import unittest
 from unittest.mock import patch
-from mylib.logic import wiki  
+from mylib.logic import wiki
 
 
 class TestWikiFunction(unittest.TestCase):
@@ -10,7 +10,7 @@ class TestWikiFunction(unittest.TestCase):
 
         result = wiki(name="Fanta Cake", length=1)
 
-        mock_summary.assert_called_once_with("Fanta Cake", 1)
+        mock_summary.assert_called_once_with("Fanta cake", 1)
         self.assertEqual(result, "Fanta Cake is a delicious dessert")
 
 

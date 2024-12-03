@@ -6,4 +6,5 @@ black
 fire
 fastapi
 uvicorn
-
+textblob
+httpx
