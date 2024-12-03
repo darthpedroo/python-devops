@@ -6,8 +6,10 @@ format:
 lint:
 	pylint --disable=R,C *.py mylib/*.py
 test:
-	#test
+	python -m pytest -vv --cov=mylib test_logic.py
+build:
+	#build container
 deploy:
 	#deploy
-all: install format lint test deploy
+all: install format lint test build deploy
 
