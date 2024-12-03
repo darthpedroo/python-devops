@@ -1,3 +1,4 @@
 from mylib.logic import wiki
 
-print(wiki("Skibidi toilet"))
+result = wiki("Fanta Cake")
+print(result)
