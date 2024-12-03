@@ -23,12 +23,24 @@ Estado actual de las acciones de github de este proyecto:
 
 ### Makefile
 
-- Instalar dependencias del proyecto
-- Formatear el codigo con [black](https://pypi.org/project/black/)
-- Aplciar un Linter con [pylint](https://pypi.org/project/pylint/)
-- Testear el código 
-- Buildear una imagen con Docker
-- Correr la imagen
+
+Para ejecutar cualquier comando hay que escribir el comando en la terminal.
+
+`make install`:Instala las dependencias del proyecto y descarga los corpus de TextBlob.
+
+`make format`: Formatea el código con black.
+
+`make lint`: Aplica el linter pylint en los archivos Python
+
+`make test`: Ejecuta los tests con pytest
+
+`make build`: Construye la imagen de Docker con la etiqueta deploy-fastapi
+
+`make run`: Ejecuta el contenedor Docker
+
+`make deploy`: Hace un deploy de la app. (No implementado)
+
+`make all`: Ejecuta todos los comandos mostrados arriba
 
 Las acciones de este Makefile se ejecutan en las acciones de github al hacer un test
 
@@ -67,27 +79,6 @@ Ejemplo:
 ```bash
 python.exe .\cli-fire.py search_wiki "Pepe"
 ```
-## Como usar Makefile
-
-
-Para ejecutar cualquier comando hay que escribir el comando en la terminal.
-
-`make install`:Instala las dependencias del proyecto y descarga los corpus de TextBlob.
-
-`make format`: Formatea el código con black.
-
-`make lint`: Aplica el linter pylint en los archivos Python
-
-`make test`: Ejecuta los tests con pytest
-
-`make build`: Construye la imagen de Docker con la etiqueta deploy-fastapi
-
-`make run`: Ejecuta el contenedor Docker
-
-`make deploy`: Hace un deploy de la app. (No implementado)
-
-`make all`: Ejecuta todos los comandos mostrados arriba
-
 
 ## Contributing
 
