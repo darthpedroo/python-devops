@@ -1,4 +1,5 @@
 import wikipedia
+from wikipedia.exceptions import DisambiguationError, PageError
 from textblob import TextBlob
 import nltk
 
@@ -17,8 +18,12 @@ def wiki(name: str, length=1):
         print("HOLA")
         my_wiki = wikipedia.summary(first_result, length)
         return my_wiki
-    except Exception as ex:
-        print("Error:", ex)
+    except DisambiguationError as de:
+        print("Disambiguation error:", de)
+    except PageError as pe:
+        print("Page not found error:", pe)
+    except IndexError:
+        print("No results found for the search query.")
 
 
 def search_wiki(query: str):
