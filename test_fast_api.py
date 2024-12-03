@@ -1,6 +1,7 @@
 from fastapi.testclient import TestClient
 from main import app
 
+
 @app.get("/")
 async def read_main():
     return {"msg": "Hello World"}
